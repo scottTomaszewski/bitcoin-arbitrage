@@ -4,23 +4,19 @@ It gets order books from supported exchanges and calculate arbitrage
 opportunities between each markets. It takes market depth into account.
 
 Currently supported exchanges to get data:
- - MtGox (USD, EUR)
  - Bitstamp (USD, ~EUR)
- - Bitcoin24 (EUR)
- - Bitfloor (USD)
- - Bitcoin-Central (EUR)
  - BTC-e (USD, EUR)
- - Intersango (EUR)
  - Bitfinex (USD)
  - Kraken (USD, EUR)
- - Bitcoin-Central (EUR)
+ - CampBX (USD)
 
 Currently supported exchanges to automate trade:
- - MtGox (EUR, USD)
+ - Kraken (USD)
  - Bitstamp (USD)
- - Bitcoin-Central (EUR) - (API changed)
 
-Donation are always welcome: **1Maxime7WnLqq24hasMA872JZ4VBGMDbKk**
+Donation are always welcome: 
+ - Scott Tomaszewski: **1FoaMcFw4vHRCjrxih2cePyZ8LymXPK5qW**
+ - Maxime: **1Maxime7WnLqq24hasMA872JZ4VBGMDbKk**
 
 # WARNING
 
@@ -66,24 +62,6 @@ To check your balance on an exchange (also a good way to check your accounts con
 Run tests
 
     $ nosetests arbitrage/
-
-# TODO
-
- * Tests
- * Write documentation
- * Add other exchanges:
-   * icbit
-   * BitFinex
- * Update order books with a WebSocket client for supported exchanges
-   (MtGox, Bitcoin-Central)
- * Better history handling for observer "HistoryDumper" (Redis ?)
- * Move EUR / USD from a market to an other:
-   * Coupons
-   * Ripple ?
-   * Negative Operations
-   * use Litecoin or other cryptocurrencies trades
-
-# LICENSE
 
 MIT
 
